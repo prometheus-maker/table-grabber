@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Table Grabber: tables & lists to CSV/Excel",
+  "version": "1.0.0",
+  "description": "One click: finds the table or list on any page, previews it, follows Next pages, saves CSV or Excel. No account, nothing leaves your browser.",
+  "homepage_url": "https://github.com/prometheus-maker/table-grabber",
+  "icons": { "48": "icons/icon-48.png", "96": "icons/icon-96.png", "128": "icons/icon-128.png" },
+  "action": {
+    "default_title": "Grab the tables and lists on this page",
+    "default_icon": { "16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png" }
+  },
+  "commands": {
+    "_execute_action": { "suggested_key": { "default": "Alt+Shift+G" }, "description": "Open Table Grabber" }
+  },
+  "permissions": ["activeTab", "scripting"],
+  "background": { "scripts": ["src/background.js"] },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "table-grabber@prometheus-maker.github.io",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": { "required": ["none"] }
+    }
+  }
+}
