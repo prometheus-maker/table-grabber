@@ -10,7 +10,7 @@
     "S", "SAMP", "SMALL", "SPAN", "STRONG", "SUB", "SUP", "TIME", "U", "VAR", "WBR", "DEL", "INS", "FONT"]);
   const NEXT_RE = /^\s*(next|next page|next ›|next »|more|older posts?|weiter|nächste|suivant|siguiente|successivo|próxima|volgende|następna|sljedeća|следующая|›|»|>|→|>>)\s*$/i;
 
-  const clean = (s) => (s || "").replace(/[\s ​]+/g, " ").trim();
+  const clean = (s) => (s || "").replace(/[\s\u00a0\u200b]+/g, " ").trim();
   const BLOCK = /^(BR|P|DIV|LI|TR|H[1-6]|UL|OL|DL|DT|DD|SECTION|ARTICLE|HEADER|FOOTER|BLOCKQUOTE|PRE|TABLE)$/;
   // textContent, but <br> and block edges become spaces ("rate<br>in 2026" -> "rate in 2026"); hidden helper text skipped
   function txt(el) {
@@ -475,7 +475,7 @@
     return /[",\r\n;]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
   }
   function toCSV(columns, rows) {
-    return "﻿" + [columns, ...rows].map((r) => r.map(csvCell).join(",")).join("\r\n") + "\r\n";
+    return "\ufeff" + [columns, ...rows].map((r) => r.map(csvCell).join(",")).join("\r\n") + "\r\n";
   }
   function toTSV(columns, rows) {
     return [columns, ...rows].map((r) => r.map((v) => String(v == null ? "" : v).replace(/[\t\r\n]+/g, " ")).join("\t")).join("\n");
@@ -518,7 +518,7 @@
     return out;
   }
 
-  const xmlText = (s) => String(s).replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f￾￿]/g, "")
+  const xmlText = (s) => String(s).replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\ufffe\uffff]/g, "")
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   function colName(i) {
     let s = "";
