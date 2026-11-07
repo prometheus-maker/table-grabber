@@ -109,15 +109,24 @@
     });
     const width = Math.max(0, ...grid.map((r) => r.length));
     grid.forEach((r) => { while (r.length < width) r.push(""); });
-    let header = null;
-    const first = rows[0];
-    if (first && (first.parentElement.tagName === "THEAD" || [...first.cells].every((c) => c.tagName === "TH"))) {
-      header = grid.shift();
+    let header = null, nHead = 0;
+    const isHead = (tr) => tr && (tr.parentElement.tagName === "THEAD" || [...tr.cells].every((c) => c.tagName === "TH"));
+    while (nHead < 3 && nHead < rows.length - 1 && isHead(rows[nHead])) nHead++;
+    if (nHead) { // two header rows ("Height" over "m | ft") become "Height m", "Height ft"
+      const heads = grid.splice(0, nHead);
+      header = heads[0].map((_, c) => {
+        const parts = [];
+        heads.forEach((h) => { if (h[c] && parts[parts.length - 1] !== h[c]) parts.push(h[c]); });
+        return parts.join(" ");
+      });
     }
+    // separator rows (one empty cell across the table) carry no data
+    const keepRow = grid.map((r) => r.some((c) => c));
     const names = uniqueNames((header || []).map((h, i) => h || `Column ${i + 1}`).concat(
       Array.from({ length: Math.max(0, width - (header ? header.length : 0)) }, (_, i) => `Column ${(header ? header.length : 0) + i + 1}`)));
     // a column whose cells are mostly links gets a URL column next to it
-    const bodyRows = rows.slice(header ? 1 : 0);
+    const bodyRows = rows.slice(nHead).filter((_, i) => keepRow[i]);
+    for (let i = grid.length - 1; i >= 0; i--) if (!keepRow[i]) grid.splice(i, 1);
     const linkCols = [];
     for (let c = 0; c < width; c++) {
       let n = 0;
@@ -189,6 +198,10 @@
 
       walk(el, p);
     };
+    if (Array.isArray(item)) { // one record spread over several siblings (<dt>+<dd>, 3 table rows per story)
+      item.forEach((el, i) => visit(el, i + ":" + step(el)));
+      return vals;
+    }
     if (item.tagName === "A" && item.getAttribute("href")) vals.push(["@href", item.href]);
     const own = [...item.childNodes].some((n) => n.nodeType === 3 && n.textContent.trim());
     if (own) vals.push(["", clean([...item.childNodes].filter((n) => n.nodeType === 3).map((n) => n.textContent).join(" "))]);
@@ -234,9 +247,37 @@
   }
 
   // Items of one list share a signature path (own tag+classes, parent's, grandparent's), even when they are
-  // spread over several parents (a grid built as rows of 3 cards).
-  const itemKey = (el) => [el, el.parentElement, el.parentElement && el.parentElement.parentElement]
-    .map((e) => (e ? sig(e) : "")).join("<");
+  // spread over several parents (a grid built as rows of 3 cards). Classes that differ per item (post-246,
+  // first/last, instock/outofstock, product_cat-shirts) are left out: only classes most siblings share count.
+  const STATE = /^(first|last|odd|even|active|selected|current|hidden|visible|new|sale|featured|instock|outofstock|onbackorder|disabled|open|closed|is-.*|has-.*)$/i;
+  const TAXONOMY = /^(product_cat|product_tag|category|tag|post_tag|format|status|type|product-type|pa_[a-z]+)-/i; // WordPress
+  const STRIPE = /(^|[-_])(odd|even|alt|alternate|striped?)$/i; // zebra rows: row-odd / row-even
+  const stable = (c) => !/\d/.test(c) && !STATE.test(c) && !TAXONOMY.test(c) && !STRIPE.test(c);
+  const common = new WeakMap(); // parent -> Map(tag -> Set of classes on >= half of the siblings with that tag)
+  function sharedClasses(el) {
+    const p = el.parentElement;
+    if (!p) return null;
+    let m = common.get(p);
+    if (!m) {
+      m = new Map();
+      const by = new Map();
+      for (const c of p.children) { if (!by.has(c.tagName)) by.set(c.tagName, []); by.get(c.tagName).push(c); }
+      for (const [t, sibs] of by) {
+        const n = new Map();
+        sibs.forEach((s) => new Set(s.classList).forEach((c) => n.set(c, (n.get(c) || 0) + 1)));
+        m.set(t, new Set([...n].filter(([c, k]) => k >= Math.max(sibs.length > 3 ? 2 : 1, sibs.length / 4) && stable(c)).map(([c]) => c)));
+      }
+      common.set(p, m);
+    }
+    return m.get(el.tagName);
+  }
+  const ksig = (el, own) => {
+    const keep = own ? sharedClasses(el) : null;
+    const cls = [...(el.classList || [])].filter((c) => (keep ? keep.has(c) : stable(c))).sort();
+    return el.tagName + (cls.length ? "." + cls.join(".") : "");
+  };
+  const itemKey = (el) => [ksig(el, true), el.parentElement ? ksig(el.parentElement) : "",
+    el.parentElement && el.parentElement.parentElement ? ksig(el.parentElement.parentElement) : ""].join("<");
 
   function lca(els) {
     let a = els[0].parentElement;
@@ -248,6 +289,29 @@
     return [...container.querySelectorAll("*")].filter((e) => itemKey(e) === key);
   }
 
+  // Children that repeat as a cycle of 2-4 different elements ([dt, dd], [tr.athing, tr, tr.spacer]) are records.
+  function cycles(parent, want) {
+    const kids = [...parent.children].filter((c) => !SKIP.has(c.tagName.toUpperCase()));
+    const sigs = kids.map((c) => ksig(c, true));
+    let best = null;
+    for (let p = 2; p <= 4; p++) {
+      for (let start = 0; start < p && start + p <= kids.length; start++) {
+        const pat = sigs.slice(start, start + p);
+        if (new Set(pat).size < 2 || (want && pat.join("|") !== want)) continue;
+        let n = 0;
+        while (start + (n + 1) * p <= kids.length && pat.every((g, j) => sigs[start + n * p + j] === g)) n++;
+        if (n >= 3 && (!best || n * p > best.n * best.p)) best = { p, start, n, pat: pat.join("|") };
+      }
+    }
+    if (!best) return null;
+    const items = [];
+    for (let i = 0; i < best.n; i++) items.push(kids.slice(best.start + i * best.p, best.start + (i + 1) * best.p));
+    return { items, pat: best.pat, covers: best.n * best.p / kids.length };
+  }
+
+  // menus, footers, sidebars and footnotes are rarely the data someone came for
+  const aside = (el) => (el.closest("nav, footer, aside, header, [role='navigation'], [role='contentinfo'], [role='complementary'], " +
+    ".references, .reflist, .footnotes, .toc, #toc, .sidebar, .navbox, .menu") ? 0.2 : 1);
   const avgText = (rows) => rows.length ? rows.reduce((s, r) => s + r.join(" ").length, 0) / rows.length : 0;
 
   /* ---------- detection ---------- */
@@ -259,14 +323,18 @@
       const data = tableRows(t);
       if (data.columns.length < 2 || data.rows.length < 1) return;
       if (data.rows.every((r) => r.every((c) => !c))) return;
+      const ranked = /^(#|no\.?|pos\.?|position|rank|rk|place|pl)$/i.test(data.columns[0] || "") ? 1.5 : 1;
       found.push({ kind: "table", el: t, selector: selectorFor(t), ...data,
-        score: data.rows.length * data.columns.length * Math.log2(2 + avgText(data.rows)) });
+        score: ranked * data.rows.length * Math.min(data.columns.length, 10) * Math.log2(2 + avgText(data.rows)) });
     });
+    const tables = new Set(found.map((f) => f.el));
     const body = doc.body || doc.documentElement;
     const groups = new Map(), boxId = new Map();
     body.querySelectorAll("*").forEach((e) => {
       const t = e.tagName.toUpperCase();
-      if (SKIP.has(t) || ["TD", "TH", "THEAD", "TBODY", "OPTION", "BR", "HR"].includes(t) || e.closest("svg, select")) return;
+      // table rows are covered by the table itself, or by record cycles (several <tr> per record) below
+      if (SKIP.has(t) || ["TABLE", "CAPTION", "TR", "TD", "TH", "THEAD", "TBODY", "TFOOT", "OPTION", "BR", "HR"].includes(t) ||
+        e.closest("svg, select")) return;
       // rows of two different tables (or lists) never form one list, even when they look the same
       const box = e.parentElement && e.parentElement.closest("table, ul, ol, dl");
       if (!boxId.has(box)) boxId.set(box, boxId.size);
@@ -287,9 +355,31 @@
       const data = listRows(items);
       if (!data.columns.length || !data.paths.some((p) => !p.includes("@"))) continue;
       const c = lca(items) || body;
+      // paragraphs of an article are text, not records: one or two columns of long sentences
+      const filled = (i) => data.rows.filter((r) => r[i]).length >= 0.5 * data.rows.length;
+      const textCols = data.paths.map((p, i) => i).filter((i) => !data.paths[i].includes("@") && !(data.hidden || [])[i] && filled(i));
+      const prose = textCols.length <= 2 && data.rows.reduce((s, r) => s + Math.max(0, ...textCols.map((i) => (r[i] || "").length)), 0) /
+        Math.max(1, data.rows.length) > 120;
+      const inTable = c.closest("table") && tables.has(c.closest("table")); // bits of cells inside a found table
+      const ofTables = items.filter((i) => i.querySelector("table")).length >= 0.5 * items.length; // boxes around tables
       found.push({ kind: "list", el: c, selector: selectorFor(c), itemKey: k.split("#")[0], items, ...data,
-        score: items.length * Math.min(data.columns.length, 8) * Math.log2(2 + avgText(data.rows)) });
+        score: items.length * Math.min(data.columns.length, 8) * Math.log2(2 + avgText(data.rows)) * aside(c) *
+          (prose ? 0.2 : 1) * (inTable || ofTables ? 0.2 : 1) });
     }
+    const seenParents = new Set();
+    body.querySelectorAll("dl, tbody, table, ol, ul, div, section, main").forEach((par) => {
+      if (par.children.length < 6 || seenParents.has(par)) return;
+      seenParents.add(par);
+      const cy = cycles(par);
+      if (!cy || cy.covers < 0.5) return;
+      const data = listRows(cy.items);
+      if (!data.columns.length || !data.paths.some((p) => !p.includes("@"))) return;
+      const host = par.tagName === "TBODY" ? par.closest("table") : par;
+      found.push({ kind: "list", el: host, selector: selectorFor(par), cycle: cy.pat, ...data,
+        score: cy.items.length * Math.min(data.columns.length, 8) * Math.log2(2 + avgText(data.rows)) * 1.2 });
+      // a layout table whose rows are really these records is not the data itself
+      found.forEach((f) => { if (f.kind === "table" && (f.el === host || f.el.contains(par))) f.score *= 0.3; });
+    });
     // a list inside the items of another list (tags on each repo card, links in each row) ranks below that list
     const owner = new Map();
     found.forEach((f, n) => (f.items || []).forEach((i) => { if (!owner.has(i)) owner.set(i, []); owner.get(i).push(n); }));
@@ -297,9 +387,20 @@
       if (!f.items) return;
       const inside = (i, g) => { for (let a = i.parentElement; a; a = a.parentElement) if ((owner.get(a) || []).includes(g)) return true; return false; };
       const cands = new Set();
-      for (let a = f.items[0].parentElement; a; a = a.parentElement) (owner.get(a) || []).forEach((g) => g !== n && cands.add(g));
-      for (const g of cands) {
-        if (found[g].items.length >= 3 && f.items.every((i) => inside(i, g))) { f.score *= 0.05; break; }
+      for (const i of f.items.slice(0, 50)) {
+        for (let a = i.parentElement; a; a = a.parentElement) (owner.get(a) || []).forEach((g) => g !== n && cands.add(g));
+      }
+      for (const g of cands) { // most of them inside (a few related-topic tags may sit in the page header)
+        if (found[g].items.length >= 3 && f.items.filter((i) => inside(i, g)).length >= 0.8 * f.items.length) {
+          // outer items that each hold several inner records (rows of 3 country cards, shop sections) show it as
+          // "a | b | c" cells: then the outer list is the wrapper. Otherwise the inner one is a detail (tags).
+          const cells = found[g].rows.flat().filter(Boolean);
+          const joined = cells.filter((c) => c.includes(" | ")).length / Math.max(1, cells.length);
+          const vis = (x) => x.columns.filter((_, i) => !(x.hidden || [])[i]).length;
+          if (joined > 0.3 && f.items.length >= 2 * found[g].items.length && vis(f) >= 0.6 * vis(found[g])) found[g].score *= 0.05;
+          else f.score *= 0.05;
+          break;
+        }
       }
     });
     // the same data found twice (a list of <tr>s inside a found table; a wrapper around a list): keep the higher score
@@ -327,7 +428,7 @@
       const d = tableRows(el);
       return { rows: alignRows(d.columns, d.rows, cand.columns), el };
     }
-    const items = listItems(el, cand.itemKey);
+    const items = cand.cycle ? ((cycles(el, cand.cycle) || { items: [] }).items) : listItems(el, cand.itemKey);
     if (!items.length) return null;
     const d = listRows(items);
     return { rows: alignRows(d.paths, d.rows, cand.paths), el };

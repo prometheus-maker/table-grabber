@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Table Grabber: tables & lists to CSV/Excel",
+  "name": "Table Grabber – Data Scraper to CSV & Excel",
   "version": "1.0.0",
   "description": "One click: finds the table or list on any page, previews it, follows Next pages, saves CSV or Excel. No account, nothing leaves your browser.",
   "homepage_url": "https://github.com/prometheus-maker/table-grabber",

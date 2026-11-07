@@ -35,6 +35,8 @@ Please only collect data you're allowed to use, and respect each site's terms.
   and checks rows found, pages followed (links and script buttons) and the CSV/Excel files.
 - `tests/real.sh`: packs the add-on, installs it in Firefox 159, presses the toolbar button and uses the panel
   with real mouse clicks.
+- `tests/golden.py`: 30 real pages (shops, Wikipedia, Hacker News, arXiv, GitHub, government data, docs) with the
+  rows a person would want. The first guess is right on 28 of 30, and the right one is in the menu on 29.
 - `tests/probe.py URL`: prints what it detects on any page.
 
 The code is plain JavaScript with no libraries and no build step: `src/core.js` (finding data, CSV, a small

@@ -1,0 +1,2130 @@
+{
+ "top1": 28,
+ "top3": 29,
+ "n": 30,
+ "pages": [
+  {
+   "url": "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html",
+   "category": "e-commerce (demo shop)",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 20,
+     "cols": [
+      "Link text",
+      "Price color",
+      "Star rating (class)",
+      "Link",
+      "Thumbnail image"
+     ],
+     "selector": "#default > div.container-fluid.page > div.page_inner > div.row > div.col-sm-8.col-md-9 > section > div:nth-of-type(2) > ol.row",
+     "row0": [
+      "Sharp Objects",
+      "£47.82",
+      "Four",
+      "https://books.toscrape.com/catalogue/sharp-objects_997/index.html",
+      "https://books.toscrape.com/media/cache/32/51/3251cf3a3412f53f339e42cac2134093.jpg"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 50,
+     "cols": [
+      "Link text",
+      "Link"
+     ],
+     "selector": "#default > div.container-fluid.page > div.page_inner > div.row > aside.sidebar.col-sm-4.col-md-3 > div.side_categories > ul.nav.nav-list > li > ul",
+     "row0": [
+      "Travel",
+      "https://books.toscrape.com/catalogue/category/books/travel_2/index.html"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 3,
+     "cols": [
+      "Link text",
+      "Link"
+     ],
+     "selector": "#default > div.container-fluid.page > div.page_inner > ul.breadcrumb",
+     "row0": [
+      "Home",
+      "https://books.toscrape.com/index.html"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 4.5
+  },
+  {
+   "url": "https://www.scrapingcourse.com/ecommerce/",
+   "category": "e-commerce (demo shop)",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 16,
+     "cols": [
+      "Product name",
+      "Product price",
+      "Button",
+      "Woocommerce Loop Product link link",
+      "Button link",
+      "Attachment woocommerce thumbnail image"
+     ],
+     "selector": "#product-list",
+     "row0": [
+      "Abominable Hoodie",
+      "$69.00",
+      "Select options",
+      "https://www.scrapingcourse.com/ecommerce/product/abominable-hoodie/",
+      "https://www.scrapingcourse.com/ecommerce/product/abominable-hoodie/",
+      "https://www.scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh09-blue_main.jpg"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 3,
+     "cols": [
+      "Link text",
+      "Link"
+     ],
+     "selector": "#site-navigation > div.menu > ul",
+     "row0": [
+      "Cart",
+      "https://www.scrapingcourse.com/ecommerce/cart/"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 5.1
+  },
+  {
+   "url": "https://sandbox.oxylabs.io/products",
+   "category": "e-commerce (demo shop, React/CSS-in-JS)",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 32,
+     "cols": [
+      "Title",
+      "Text",
+      "Description",
+      "Price wrapper",
+      "In stock",
+      "Link text",
+      "Out of stock",
+      "Link text 2",
+      "Card header link",
+      "Image image"
+     ],
+     "selector": "body > div > main.css-13ln7sn.e1m82fkh1 > div.e1m82fkh0 > div.css-1fttcpj > div.css-1tr0jwv > div:nth-of-type(2) > div.products-wrapper.css-phdzty",
+     "row0": [
+      "The Legend of Zelda: Ocarina of Time",
+      "Action Adventure | Fantasy",
+      "As a young boy, Link is tricked by Ganondorf, the King of the Gerudo Thieves. The evil human uses Link to gain access to the Sacred Realm, where he places his tainted hands on Triforce and transforms the beautiful Hyrulean landscape into a barren wasteland. Link is determined to fix the problems he helped to create, so with the help of Rauru he travels through time gathering the powers of the Seven Sages.",
+      "91,99 €",
+      "In stock",
+      "Add to Basket",
+      "",
+      "",
+      "https://sandbox.oxylabs.io/products/1",
+      "https://sandbox.oxylabs.io/assets/action-adventure.svg"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 98,
+     "cols": [
+      "Value"
+     ],
+     "selector": "body > div > main.css-13ln7sn.e1m82fkh1 > div.e1m82fkh0 > div.css-1fttcpj > div.css-1tr0jwv > div:nth-of-type(2) > div.products-wrapper.css-phdzty",
+     "row0": [
+      "Action Adventure"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 6,
+     "cols": [
+      "Link text",
+      "Platform link",
+      "Link"
+     ],
+     "selector": "body > div > main.css-13ln7sn.e1m82fkh1 > div.e1m82fkh0 > div.css-1fttcpj > div.css-1tr0jwv > div.filter-wrapper.css-n93jgh.eyah4m94 > ul.css-1tutthp.eyah4m93",
+     "row0": [
+      "",
+      "",
+      ""
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 4.2
+  },
+  {
+   "url": "https://shop.pimoroni.com/collections/raspberry-pi",
+   "category": "e-commerce (real shop)",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 48,
+     "cols": [
+      " popular",
+      "Text",
+      "Title",
+      "Text 2",
+      "Div",
+      "Link",
+      "Image"
+     ],
+     "selector": "#browser > div.product-search > section > div.results > div.grid",
+     "row0": [
+      "Popular",
+      "(155)",
+      "Inky Impression (13.3\")",
+      "Turn your Raspberry Pi into a colourful e-paper picture frame, dashboard or display with Inky Impression.",
+      "€278,40",
+      "https://shop.pimoroni.com/en-eu/products/inky-impression?variant=55186435277179",
+      "https://cdn.shopify.com/s/files/1/0174/1800/files/inky-impression-spectra-13-1_300x300.jpg?v=1774459747"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 10,
+     "cols": [
+      "Summary",
+      "Link text",
+      "Link text 2",
+      "Link",
+      "Link 2"
+     ],
+     "selector": "#menu_sheet > nav",
+     "row0": [
+      "Raspberry Pi",
+      "Shop all Raspberry Pi",
+      "Raspberry Pi Boards | Kits & Bundles | Accessories | Arcade & Retro Gaming | Merchandise | Displays | HATs & GPIO | Robotics | Cameras | Books | Networking | Industrial",
+      "https://shop.pimoroni.com/en-eu/collections/raspberry-pi",
+      "https://shop.pimoroni.com/en-eu/collections/raspberry-pi?category=Raspberry+Pi+Boards | https://shop.pimoroni.com/en-eu/collections/raspberry-pi?category=Kits+%26+Bundles | https://shop.pimoroni.com/en-eu/collections/raspberry-pi?category=Accessories | https://shop.pimoroni.com/en-eu/collections/raspberry-pi?category=Arcade+%26+Retro+Gaming | https://shop.pimoroni.com/en-eu/collections/raspberry-pi?category=Merchandise | https://shop.pimoroni.com/en-eu/collections/raspberry-pi?category=Displays | https://shop.pimoroni.com/en-eu/collections/raspberry-pi?category=HATs+%26+GPIO | https://shop.pimoroni.com/en-eu/collections/raspberry-pi?category=Robotics | https://shop.pimoroni.com/en-eu/collections/raspberry-pi?category=Cameras | https://shop.pimoroni.com/en-eu/collections/raspberry-pi?category=Books | https://shop.pimoroni.com/en-eu/collections/raspberry-pi?category=Networking | https://shop.pimoroni.com/en-eu/collections/raspberry-pi?category=Industrial"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 4,
+     "cols": [
+      "Link text",
+      "Small",
+      "Link"
+     ],
+     "selector": "#benefits > ul",
+     "row0": [
+      "58,736 reviews",
+      "rated 4.8 out of 5!",
+      "https://shop.pimoroni.com/en-eu/pages/reviews"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 5.8
+  },
+  {
+   "url": "https://www.raspberrypi.com/products/",
+   "category": "e-commerce (product catalogue, hard)",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 83,
+     "cols": [
+      "Text",
+      "Text 2",
+      "C product card link",
+      "Image"
+     ],
+     "selector": "#rp-app-landmark-main > div.c-slice.c-slice--white > div.o-container",
+     "row0": [
+      "Raspberry Pi 5",
+      "The everything computer. Optimised. Available from $45",
+      "https://www.raspberrypi.com/products/raspberry-pi-5/",
+      "https://assets.raspberrypi.com/static/98b2722d2fdbf42f2789601e1032bb0a/9ff6b/6aebb638-e088-4b28-bbfd-67eae784ca3b_PI_5_FEATURE.webp"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 8,
+     "cols": [
+      "Text",
+      "Text 2",
+      "Text 3",
+      "Link text",
+      "C button",
+      "C type display large",
+      "Text 4",
+      "Text 5",
+      "C product card link",
+      "C primary product link",
+      "Image",
+      "Image 2"
+     ],
+     "selector": "#rp-app-landmark-main > div.c-slice.c-slice--white > div.o-container",
+     "row0": [
+      "Raspberry Pi 5 | Raspberry Pi 500+ | Raspberry Pi Compute Module 5 | Raspberry Pi Pico 2",
+      "The everything computer. Optimised. Available from $45 | The premium desktop computer. Available from $410 | Leverage Raspberry Pi 5’s powerful hardware and efficient software stack in your own custom embedded systems. Available from $67.50 | Our next-generation microcontroller board, built using RP2350. Available from $5",
+      "More info",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "https://www.raspberrypi.com/products/raspberry-pi-5/ | https://www.raspberrypi.com/products/raspberry-pi-500-plus/ | https://www.raspberrypi.com/products/compute-module-5/ | https://www.raspberrypi.com/products/raspberry-pi-pico-2/",
+      "",
+      "https://assets.raspberrypi.com/static/98b2722d2fdbf42f2789601e1032bb0a/9ff6b/6aebb638-e088-4b28-bbfd-67eae784ca3b_PI_5_FEATURE.webp | https://assets.raspberrypi.com/static/ebc13422baa8fde920be1a74e54ee653/9ff6b/aMMD7mGNHVfTPEEX_500%2Bdesktop.webp | https://assets.raspberrypi.com/static/afb51d9828ec655da2189f2fe9b92dd1/9ff6b/Z0RI1K8jQArT1Q2y_Documentation.webp | https://assets.raspberrypi.com/static/868bfbc6641ed9bbbf331c9afcb4236a/9ff6b/Z0Qq7q8jQArT1QmI_HARDWAREPAGEupdared.webp",
+      ""
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 5,
+     "cols": [
+      "0:h2",
+      "Link text",
+      "Link"
+     ],
+     "selector": "#gatsby-focus-wrapper > footer > div.__rptl-footer-container > nav.__rptl-footer-row > div.__rptl-footer-column:nth-of-type(4)",
+     "row0": [
+      "Software",
+      "Raspberry Pi Connect | Raspberry Pi Desktop | Raspberry Pi Imager | Raspberry Pi OS",
+      "https://www.raspberrypi.com/software/connect/ | https://www.raspberrypi.com/software/raspberry-pi-desktop/ | https://www.raspberrypi.com/software/ | https://www.raspberrypi.com/software/operating-systems/"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 4.2
+  },
+  {
+   "url": "https://www.scrapethissite.com/pages/simple/",
+   "category": "cards split across grid rows (hard)",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 250,
+     "cols": [
+      "Country name",
+      "Country capital",
+      "Country population",
+      "Country area"
+     ],
+     "selector": "#countries > div.container",
+     "row0": [
+      "Andorra",
+      "Andorra la Vella",
+      "84000",
+      "468.0"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 750,
+     "cols": [
+      "Value",
+      "Sup"
+     ],
+     "selector": "#countries > div.container",
+     "row0": [
+      "Capital:",
+      ""
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 88,
+     "cols": [
+      "Country name",
+      "Text",
+      "Country capital",
+      "Country population",
+      "Country area"
+     ],
+     "selector": "body",
+     "row0": [
+      "",
+      "",
+      "",
+      "",
+      ""
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 4.7
+  },
+  {
+   "url": "https://news.ycombinator.com/",
+   "category": "news aggregator / layout table (hard)",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 30,
+     "cols": [
+      "Title",
+      "Link text",
+      "Link text 2",
+      "Subline",
+      "Score",
+      "Hnuser",
+      "Link text 3",
+      "Link text 4",
+      "Link",
+      "Link 2",
+      "Link 3",
+      "Hnuser link"
+     ],
+     "selector": "#bigbox > td > table > tbody",
+     "row0": [
+      "1.",
+      "CATL Sodium Battery Hits LFP Cost Parity in 2026: 15,000 Cycles, 30-Year Life",
+      "ievchina.com",
+      "by | |",
+      "71 points",
+      "doener",
+      "1 hour ago",
+      "hide | 29 comments",
+      "https://news.ycombinator.com/vote?id=50399657&how=up&goto=news",
+      "https://ievchina.com/energy-storage/catl-sodium-battery-cost-parity-lfp-2026-15000-cycles/",
+      "https://news.ycombinator.com/from?site=ievchina.com",
+      "https://news.ycombinator.com/user?id=doener"
+     ]
+    },
+    {
+     "kind": "table",
+     "n": 61,
+     "cols": [
+      "Column 1",
+      "Column 2",
+      "Column 3",
+      "Column 3 link"
+     ],
+     "selector": "#bigbox > td > table",
+     "row0": [
+      "1.",
+      "",
+      "CATL Sodium Battery Hits LFP Cost Parity in 2026: 15,000 Cycles, 30-Year Life (ievchina.com)",
+      "https://ievchina.com/energy-storage/catl-sodium-battery-cost-parity-lfp-2026-15000-cycles/"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 8,
+     "cols": [
+      "Value",
+      "Link"
+     ],
+     "selector": "#hnmain > tbody > tr:nth-of-type(1) > td > table > tbody > tr",
+     "row0": [
+      "new",
+      "https://news.ycombinator.com/newest"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 4.0
+  },
+  {
+   "url": "https://lobste.rs/",
+   "category": "news aggregator",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 25,
+     "cols": [
+      "Upvoter",
+      "U url",
+      "Tag",
+      "Domain",
+      "Text",
+      "U author",
+      "Date",
+      "Summary",
+      "Link text",
+      "Link text 2",
+      "Mobile comments",
+      "Upvoter link"
+     ],
+     "selector": "#inside > ol.stories.list",
+     "row0": [
+      "47",
+      "Making musl and proprietary NVIDIA drivers work together",
+      "linux",
+      "chimera-linux.org",
+      "authored by | |",
+      "q66",
+      "10 hours ago",
+      "caches",
+      "Archive.org | Ghostarchive",
+      "9 comments",
+      "9",
+      "https://lobste.rs/login"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 5,
+     "cols": [
+      "Link text",
+      "Link"
+     ],
+     "selector": "#header-top > nav > ul",
+     "row0": [
+      "Active",
+      "https://lobste.rs/active"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 4,
+     "cols": [
+      "Value",
+      "Link"
+     ],
+     "selector": "body > footer > nav",
+     "row0": [
+      "About",
+      "https://lobste.rs/about"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 4.0
+  },
+  {
+   "url": "https://text.npr.org/",
+   "category": "news list",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 20,
+     "cols": [
+      "Topic title",
+      "Topic title link"
+     ],
+     "selector": "body > main > div.topic-container > ul",
+     "row0": [
+      "These are the races in the House and Senate that haven't been called yet",
+      "https://text.npr.org/g-s1-152127"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 4,
+     "cols": [
+      "Link text",
+      "Link"
+     ],
+     "selector": "body > footer > nav.lower-nav-container",
+     "row0": [
+      "Contact Us",
+      "https://text.npr.org/614470770"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 3,
+     "cols": [
+      "Link text",
+      "Link"
+     ],
+     "selector": "body > nav > ul",
+     "row0": [
+      "News",
+      "https://text.npr.org/1001"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 3.3
+  },
+  {
+   "url": "https://arxiv.org/list/cs.AI/recent",
+   "category": "listing, dt/dd split items (hard)",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 50,
+     "cols": [
+      "0:dt",
+      "Link text",
+      "List title",
+      "List authors",
+      "Link text 2",
+      "List subjects",
+      "List comments",
+      "Link",
+      "Link 2"
+     ],
+     "selector": "#articles",
+     "row0": [
+      "[ , , ]",
+      "[1] | arXiv:2611.08483 | pdf | html | other",
+      "Title: SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      ",",
+      "Qile Jiang | George Em Karniadakis",
+      "; Neural and Evolutionary Computing (cs.NE)",
+      "",
+      "https://arxiv.org/abs/2611.08483 | https://arxiv.org/pdf/2611.08483 | https://arxiv.org/html/2611.08483v1 | https://arxiv.org/format/2611.08483",
+      "https://arxiv.org/search/cs?searchtype=author&query=Jiang,+Q | https://arxiv.org/search/cs?searchtype=author&query=Karniadakis,+G+E"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 246,
+     "cols": [
+      "Value",
+      "Link"
+     ],
+     "selector": "#articles",
+     "row0": [
+      "[1]",
+      ""
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 305,
+     "cols": [
+      "Value",
+      "Link"
+     ],
+     "selector": "#articles",
+     "row0": [
+      "Qile Jiang",
+      "https://arxiv.org/search/cs?searchtype=author&query=Jiang,+Q"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 3.6
+  },
+  {
+   "url": "https://github.com/topics/csv",
+   "category": "search/listing results",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 248,
+     "cols": [
+      "Value",
+      "Link"
+     ],
+     "selector": "body.logged-out.env-production.page-responsive > div.logged-out.env-production.page-responsive > div.application-main > main > div:nth-of-type(2) > div.topic.p-responsive.container-lg > div.d-md-flex.gutter-md > div.col-md-8.col-lg-9",
+     "row0": [
+      "react",
+      "https://github.com/topics/react"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 20,
+     "cols": [
+      "Link",
+      "Counter",
+      "Tabnav tab",
+      "Color fg muted",
+      "Topic tag",
+      "Tmp mr 4",
+      "No wrap",
+      "V align middle",
+      "Link link",
+      "Tooltipped link",
+      "Tabnav tab link",
+      "Topic tag link"
+     ],
+     "selector": "body.logged-out.env-production.page-responsive > div.logged-out.env-production.page-responsive > div.application-main > main > div:nth-of-type(2) > div.topic.p-responsive.container-lg > div.d-md-flex.gutter-md > div.col-md-8.col-lg-9",
+     "row0": [
+      "AykutSarac | jsoncrack.com",
+      "44.6k",
+      "Code | Issues | Pull requests | Discussions",
+      "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "react | visualization | yaml | json | csv | graph | tool | nextjs | diagrams",
+      "Updated | TypeScript",
+      "Sep 14, 2026",
+      "",
+      "https://github.com/AykutSarac | https://github.com/AykutSarac/jsoncrack.com",
+      "https://github.com/login?return_to=%2FAykutSarac%2Fjsoncrack.com",
+      "https://github.com/AykutSarac/jsoncrack.com | https://github.com/AykutSarac/jsoncrack.com/issues | https://github.com/AykutSarac/jsoncrack.com/pulls | https://github.com/AykutSarac/jsoncrack.com/discussions",
+      "https://github.com/topics/react | https://github.com/topics/visualization | https://github.com/topics/yaml | https://github.com/topics/json | https://github.com/topics/csv | https://github.com/topics/graph | https://github.com/topics/tool | https://github.com/topics/nextjs | https://github.com/topics/diagrams"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 40,
+     "cols": [
+      "Color fg muted",
+      "Tmp mr 4",
+      "No wrap"
+     ],
+     "selector": "body.logged-out.env-production.page-responsive > div.logged-out.env-production.page-responsive > div.application-main > main > div:nth-of-type(2) > div.topic.p-responsive.container-lg > div.d-md-flex.gutter-md > div.col-md-8.col-lg-9",
+     "row0": [
+      "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "",
+      ""
+     ]
+    }
+   ],
+   "top1": false,
+   "top3": true,
+   "top1_problems": [
+    "rows 248 not in [15,30]",
+    "no row has ['sheetjs']"
+   ],
+   "match_rank": 2,
+   "secs": 19.5
+  },
+  {
+   "url": "https://rubygems.org/search?query=csv",
+   "category": "package search results",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 30,
+     "cols": [
+      "Text b1",
+      "Ml 2",
+      "Text b3",
+      "Text",
+      "Link"
+     ],
+     "selector": "body > div.min-h-screen.flex.flex-col > main.flex-1.w-full.px-8 > div.max-w-screen-xl.w-full.mx-auto > article.bg-white.border.w-full",
+     "row0": [
+      "csv",
+      "3.3.7",
+      "CSV Reading and Writing",
+      "222,022,895",
+      "https://rubygems.org/gems/csv"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 60,
+     "cols": [
+      "Text b1",
+      "Ml 2",
+      "Text b3",
+      "Text"
+     ],
+     "selector": "body > div.min-h-screen.flex.flex-col > main.flex-1.w-full.px-8 > div.max-w-screen-xl.w-full.mx-auto > article.bg-white.border.w-full",
+     "row0": [
+      "csv",
+      "3.3.7",
+      "",
+      ""
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 5,
+     "cols": [
+      "Value",
+      "Link"
+     ],
+     "selector": "body > div.min-h-screen.flex.flex-col > main.flex-1.w-full.px-8 > div.max-w-screen-xl.w-full.mx-auto > article.bg-white.border.w-full > div.flex.flex-wrap.items-center",
+     "row0": [
+      "Name (328)",
+      "https://rubygems.org/search?query=name%3Acsv"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 3.7
+  },
+  {
+   "url": "https://discuss.python.org/latest",
+   "category": "forum thread list (Discourse)",
+   "cands": [
+    {
+     "kind": "table",
+     "n": 30,
+     "cols": [
+      "Topic",
+      "Topic link",
+      "Posters",
+      "Posters link",
+      "Replies",
+      "Replies link",
+      "Views",
+      "Activity",
+      "Activity link"
+     ],
+     "selector": "#ember9 > table.topic-list",
+     "row0": [
+      "Hello from a new Security Developer Core Development",
+      "https://discuss.python.org/t/hello-from-a-new-security-developer/109842",
+      "",
+      "https://discuss.python.org/u/brett.smith",
+      "6",
+      "https://discuss.python.org/t/hello-from-a-new-security-developer/109842/1",
+      "387",
+      "19m",
+      "https://discuss.python.org/t/hello-from-a-new-security-developer/109842/8"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 18,
+     "cols": [
+      "Value",
+      "Link text",
+      "Link"
+     ],
+     "selector": "#banner-content > ul",
+     "row0": [
+      "(1)",
+      "certifi 2026.10.19",
+      "https://github.com/certifi/python-certifi/security/advisories/GHSA-6q48-6c7w-9gw2"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 6,
+     "cols": [
+      "Value",
+      "Link text",
+      "Code",
+      "Link"
+     ],
+     "selector": "#banner-content",
+     "row0": [
+      "A has required removing the emSign root CA certificate from CA bundles such as “ ”. It’s important to immediately upgrade the software packages below to at least the versions specified and rebuild container images with layer caching disabled to fetch the latest system certificates. Failure to do so could result in monster-in-the-middle (MITM) attacks against TLS clients, including and .",
+      "security incident affecting eMudhra intermediate certificates | certifi",
+      "python.org | pypi.org",
+      "https://emudhra.we-have-a-problem.com/ | https://pypi.org/p/certifi"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 7.5
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population",
+   "category": "Wikipedia sortable table",
+   "cands": [
+    {
+     "kind": "table",
+     "n": 240,
+     "cols": [
+      "Location",
+      "Location link",
+      "Population",
+      "% of world",
+      "Date",
+      "Source (official or from the United Nations)",
+      "Source (official or from the United Nations) link",
+      "Notes"
+     ],
+     "selector": "#mwQg",
+     "row0": [
+      "World",
+      "",
+      "8,232,000,000",
+      "100%",
+      "13 Jun 2025",
+      "UN projection[1][3]",
+      "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population#cite_note-UNFPA-1",
+      ""
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 251,
+     "cols": [
+      "Link text",
+      "Citation",
+      "External",
+      "I",
+      "Reference accessdate",
+      "Cs1 format",
+      "External link"
+     ],
+     "selector": "#mwD04",
+     "row0": [
+      "2",
+      ". . UNFPA. 2024 .",
+      "\"World Population Dashboard\"",
+      "United Nations Population Fund",
+      ". Retrieved 12 September 2025",
+      "",
+      "https://www.unfpa.org/data/world-population-dashboard"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 6,
+     "cols": [
+      "Hatnote",
+      "Link text",
+      "Text",
+      "Link text 2",
+      "Title",
+      "Link text 3",
+      "Citation",
+      "External",
+      "Link text 4",
+      "Item",
+      "Link",
+      "Link 2"
+     ],
+     "selector": "#mw-content-text > div.mw-content-ltr.mw-parser-output",
+     "row0": [
+      "This article is about a list of countries and dependencies by population based on figures from official sources or, if not available, estimates and projections from the United Nations. For a list based purely on figures from the United Nations, see . | This article reflects continually changing information from hundreds of sources. You can help by updating items to more recent figures from .",
+      "List of countries and dependencies by population (United Nations)",
+      ", the most populous country in the world is , followed closely by , with both exceeding 1.4 billion.",
+      "India | China",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population_(United_Nations)",
+      "https://en.wikipedia.org/wiki/India | https://en.wikipedia.org/wiki/China"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 5.7
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+   "category": "Wikipedia, several tables",
+   "cands": [
+    {
+     "kind": "table",
+     "n": 23,
+     "cols": [
+      "Year",
+      "Year link",
+      "Winners",
+      "Winners link",
+      "Score",
+      "Score link",
+      "Runners-up",
+      "Runners-up link",
+      "Venue",
+      "Venue link",
+      "Location",
+      "Location link"
+     ],
+     "selector": "#mwkA",
+     "row0": [
+      "1930",
+      "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup",
+      "Uruguay",
+      "https://en.wikipedia.org/wiki/Uruguay_national_football_team",
+      "4–2",
+      "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup_final",
+      "Argentina",
+      "https://en.wikipedia.org/wiki/Argentina_national_football_team",
+      "Estadio Centenario",
+      "https://en.wikipedia.org/wiki/Estadio_Centenario",
+      "Montevideo, Uruguay",
+      "https://en.wikipedia.org/wiki/Montevideo"
+     ]
+    },
+    {
+     "kind": "table",
+     "n": 13,
+     "cols": [
+      "Team",
+      "Team link",
+      "Winners",
+      "Runners-up",
+      "Total finals",
+      "Years won",
+      "Years won link",
+      "Years runners-up",
+      "Years runners-up link"
+     ],
+     "selector": "#mwAtQ",
+     "row0": [
+      "Brazil",
+      "https://en.wikipedia.org/wiki/Brazil_national_football_team",
+      "5",
+      "2",
+      "7",
+      "1958, 1962, 1970, 1994, 2002",
+      "https://en.wikipedia.org/wiki/1958_FIFA_World_Cup_final",
+      "1950, 1998",
+      "https://en.wikipedia.org/wiki/Uruguay_v_Brazil_(1950_FIFA_World_Cup)"
+     ]
+    },
+    {
+     "kind": "table",
+     "n": 13,
+     "cols": [
+      "show v t e FIFA World Cup",
+      "show v t e FIFA World Cup link",
+      "Column 2",
+      "Column 2 link"
+     ],
+     "selector": "#mwBb0 > table.nowraplinks.mw-collapsible.autocollapse",
+     "row0": [
+      "Fédération Internationale de Football Association (FIFA)",
+      "https://en.wikipedia.org/wiki/FIFA",
+      "",
+      "https://en.wikipedia.org/wiki/FIFA"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 3.8
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics",
+   "category": "Wikipedia table with rowspans",
+   "cands": [
+    {
+     "kind": "table",
+     "n": 237,
+     "cols": [
+      "Year",
+      "Name",
+      "Name link",
+      "Column 3",
+      "Column 3 link",
+      "Country[a]",
+      "Country[a] link",
+      "Citation",
+      "Ref.",
+      "Ref. link"
+     ],
+     "selector": "#mwlA",
+     "row0": [
+      "1901",
+      "",
+      "https://en.wikipedia.org/wiki/File:WilhelmR%C3%B6ntgen.JPG",
+      "Wilhelm Röntgen",
+      "https://en.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgen",
+      "Germany",
+      "https://en.wikipedia.org/wiki/German_Empire",
+      "\"In recognition of the extraordinary services he has rendered by the discovery of the remarkable rays subsequently named after him.\"",
+      "[19]",
+      "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics#cite_note-20"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 129,
+     "cols": [
+      "Link text",
+      "Citation",
+      "External",
+      "Link text 2",
+      "Reference accessdate",
+      "External link",
+      "Link"
+     ],
+     "selector": "#mwD3E",
+     "row0": [
+      "↑",
+      ". . from the original on 25 October 2007 .",
+      "\"Alfred Nobel – The Man Behind the Nobel Prize\" | Archived",
+      "Nobel Foundation",
+      ". Retrieved 29 October 2008",
+      "http://nobelprize.org/alfred_nobel/ | https://web.archive.org/web/20071025001741/http://nobelprize.org/alfred_nobel/",
+      "https://en.wikipedia.org/wiki/Nobel_Foundation"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 7,
+     "cols": [
+      "Text",
+      "Link text",
+      "Mw reflink text",
+      "Cite bracket",
+      "Title",
+      "Mw editsection bracket",
+      "Link text 2",
+      "Link text 3",
+      "Link text 4",
+      "Link",
+      "Link 2",
+      "Link 3"
+     ],
+     "selector": "#mw-content-text > div.mw-content-ltr.mw-parser-output",
+     "row0": [
+      "The ( ) is awarded annually by the to scientists in the various fields of . It is one of the five established by the 1895 of (who died in 1896), awarded for outstanding contributions in physics. As dictated by Nobel's will, the award is administered by the and awarded by the Royal Swedish Academy of Sciences. The award is presented in at an annual ceremony on 10 December, the anniversary of Nobel's death. Each recipient receives a medal, a diploma and a monetary award prize that has varied throughout the years.",
+      "Nobel Prize in Physics | Swedish | Royal Swedish Academy of Sciences | physics | Nobel Prizes | will | Alfred Nobel | Nobel Foundation | Stockholm",
+      "1 | 2 | 3 | 4",
+      "[ | ]",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "https://en.wikipedia.org/wiki/Nobel_Prize_in_Physics | https://en.wikipedia.org/wiki/Swedish_language | https://en.wikipedia.org/wiki/Royal_Swedish_Academy_of_Sciences | https://en.wikipedia.org/wiki/Physics | https://en.wikipedia.org/wiki/Nobel_Prize | https://en.wikipedia.org/wiki/Will_and_testament | https://en.wikipedia.org/wiki/Alfred_Nobel | https://en.wikipedia.org/wiki/Nobel_Foundation | https://en.wikipedia.org/wiki/Stockholm",
+      "",
+      ""
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 4.5
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/List_of_tallest_buildings",
+   "category": "Wikipedia table, two-row header, several tables",
+   "cands": [
+    {
+     "kind": "table",
+     "n": 98,
+     "cols": [
+      "Column 1",
+      "Name",
+      "Name link",
+      "Height[14][15] m",
+      "ft",
+      "Floors",
+      "Image",
+      "Image link",
+      "City",
+      "Country",
+      "Country link",
+      "Year"
+     ],
+     "selector": "#mwsg",
+     "row0": [
+      "1",
+      "Burj Khalifa",
+      "https://en.wikipedia.org/wiki/Burj_Khalifa",
+      "828",
+      "2,717",
+      "163 (+ 2 below ground)",
+      "",
+      "https://en.wikipedia.org/wiki/File:Burj_Khalifa.jpg",
+      "Dubai",
+      "United Arab Emirates",
+      "https://en.wikipedia.org/wiki/United_Arab_Emirates",
+      "2010"
+     ]
+    },
+    {
+     "kind": "table",
+     "n": 64,
+     "cols": [
+      "Rank",
+      "Building",
+      "Building link",
+      "City",
+      "City link",
+      "Country",
+      "Country link",
+      "Height (m)",
+      "Height (ft)",
+      "Floors",
+      "Built",
+      "Reference"
+     ],
+     "selector": "#mwCZU",
+     "row0": [
+      "1",
+      "Burj Khalifa",
+      "https://en.wikipedia.org/wiki/Burj_Khalifa",
+      "Dubai",
+      "https://en.wikipedia.org/wiki/Dubai",
+      "UAE",
+      "https://en.wikipedia.org/wiki/United_Arab_Emirates",
+      "739.4 m",
+      "2,426 ft",
+      "163",
+      "2010",
+      "[116]"
+     ]
+    },
+    {
+     "kind": "table",
+     "n": 43,
+     "cols": [
+      "Rank",
+      "Building",
+      "Building link",
+      "City",
+      "City link",
+      "Country",
+      "Country link",
+      "Height",
+      "Column 6",
+      "Floors",
+      "Built"
+     ],
+     "selector": "#mwCIE > table.wikitable.sortable.jquery-tablesorter",
+     "row0": [
+      "1",
+      "Burj Khalifa†",
+      "https://en.wikipedia.org/wiki/Burj_Khalifa",
+      "Dubai",
+      "https://en.wikipedia.org/wiki/Dubai",
+      "United Arab Emirates",
+      "https://en.wikipedia.org/wiki/United_Arab_Emirates",
+      "829.8 m",
+      "2,722 ft",
+      "163",
+      "2010"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 5.1
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2024_Summer_Olympics_medal_table",
+   "category": "sports stats",
+   "cands": [
+    {
+     "kind": "table",
+     "n": 93,
+     "cols": [
+      "Rank",
+      "NOC",
+      "NOC link",
+      "Gold",
+      "Silver",
+      "Bronze",
+      "Total"
+     ],
+     "selector": "#mwAQ0",
+     "row0": [
+      "1",
+      "United States‡",
+      "https://en.wikipedia.org/wiki/United_States_at_the_2024_Summer_Olympics",
+      "40",
+      "44",
+      "42",
+      "126"
+     ]
+    },
+    {
+     "kind": "table",
+     "n": 6,
+     "cols": [
+      "show v t e Olympic Games medal tables",
+      "show v t e Olympic Games medal tables link",
+      "Column 2",
+      "Column 2 link"
+     ],
+     "selector": "#mwA3Y > table.nowraplinks.hlist.mw-collapsible",
+     "row0": [
+      "Olympic medal All-time Olympic Games medal table Youth Pierre de Coubertin Medal Intercalated Games (1906)",
+      "https://en.wikipedia.org/wiki/Olympic_medal",
+      "",
+      "https://en.wikipedia.org/wiki/Olympic_medal"
+     ]
+    },
+    {
+     "kind": "table",
+     "n": 2,
+     "cols": [
+      "Ruling date",
+      "Ruling date link",
+      "Event",
+      "Event link",
+      "Athlete (NOC)",
+      "Athlete (NOC) link",
+      "Column 4",
+      "Column 5",
+      "Column 6",
+      "Net change",
+      "Comment",
+      "Comment link"
+     ],
+     "selector": "#mwASU",
+     "row0": [
+      "11 August 2024",
+      "",
+      "Gymnastics, women's floor",
+      "https://en.wikipedia.org/wiki/Gymnastics_at_the_2024_Summer_Olympics",
+      "Jordan Chiles (USA)",
+      "https://en.wikipedia.org/wiki/Jordan_Chiles",
+      "",
+      "",
+      "−1",
+      "−1",
+      "The Romanian Olympic and Sports Committee appealed the scores in the women's floor event to the Court of Arbitration for Sport, which overturned it. As a result, Romanian Ana Bărbosu moved up to the bronze medal position, while American Jordan Chiles was demoted to fifth.[40][41]",
+      "https://en.wikipedia.org/wiki/Romanian_Olympic_and_Sports_Committee"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 3.9
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Premier_League",
+   "category": "sports standings (hard)",
+   "cands": [
+    {
+     "kind": "table",
+     "n": 20,
+     "cols": [
+      "Pos",
+      "Team",
+      "Team link",
+      "Pld",
+      "W",
+      "D",
+      "L",
+      "GF",
+      "GA",
+      "GD",
+      "Pts",
+      "Qualification or relegation"
+     ],
+     "selector": "#mwBY8 > table.wikitable",
+     "row0": [
+      "1",
+      "Liverpool (C)",
+      "https://en.wikipedia.org/wiki/Liverpool_F.C.",
+      "38",
+      "25",
+      "9",
+      "4",
+      "86",
+      "41",
+      "+45",
+      "84",
+      "Qualification for the Champions League league phase[a]"
+     ]
+    },
+    {
+     "kind": "table",
+     "n": 20,
+     "cols": [
+      "Team",
+      "Manager",
+      "Manager link",
+      "Captain",
+      "Captain link",
+      "Kit manufacturer",
+      "Kit manufacturer link",
+      "Shirt sponsor (chest)",
+      "Shirt sponsor (chest) link",
+      "Shirt sponsor (sleeve)",
+      "Shirt sponsor (sleeve) link"
+     ],
+     "selector": "#mwAeg",
+     "row0": [
+      "Arsenal",
+      "Mikel Arteta",
+      "https://en.wikipedia.org/wiki/Spain",
+      "Martin Ødegaard[31]",
+      "https://en.wikipedia.org/wiki/Norway",
+      "Adidas[32]",
+      "https://en.wikipedia.org/wiki/Adidas",
+      "Emirates[33]",
+      "https://en.wikipedia.org/wiki/Emirates_(airline)",
+      "Visit Rwanda[34]",
+      "https://en.wikipedia.org/wiki/Rwanda_Development_Board"
+     ]
+    },
+    {
+     "kind": "table",
+     "n": 20,
+     "cols": [
+      "Home \\ Away",
+      "Home \\ Away link",
+      "ARS",
+      "AVL",
+      "BOU",
+      "BRE",
+      "BHA",
+      "CHE",
+      "CRY",
+      "EVE",
+      "FUL",
+      "IPS"
+     ],
+     "selector": "#mwBc0 > div.noresize.overflowbugx > table.wikitable.plainrowheaders",
+     "row0": [
+      "Arsenal",
+      "https://en.wikipedia.org/wiki/Arsenal_F.C.",
+      "—",
+      "2–2",
+      "1–2",
+      "1–1",
+      "1–1",
+      "1–0",
+      "2–2",
+      "0–0",
+      "2–1",
+      "1–0"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 4.3
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Comparison_of_programming_languages",
+   "category": "Wikipedia, several tables",
+   "cands": [
+    {
+     "kind": "table",
+     "n": 140,
+     "cols": [
+      "Language",
+      "Language link",
+      "Original purpose",
+      "Imperative",
+      "Object-oriented",
+      "Functional",
+      "Procedural",
+      "Generic",
+      "Reflective",
+      "Other paradigms",
+      "Standardized"
+     ],
+     "selector": "#mwLQ",
+     "row0": [
+      "1C:Enterprise programming language",
+      "https://en.wikipedia.org/wiki/1C:Enterprise_programming_language",
+      "Application, RAD, business, general, web, mobile",
+      "Yes",
+      "No",
+      "Yes",
+      "Yes",
+      "Yes",
+      "Yes",
+      "Object-based, Prototype-based programming",
+      "No"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 64,
+     "cols": [
+      "Link text",
+      "Mw reference text",
+      "Citation",
+      "External",
+      "I",
+      "External link"
+     ],
+     "selector": "#mwCMw",
+     "row0": [
+      "↑",
+      "As of May 2006 Diarmuid Pigott's hosted at , lists 8512 computer languages.",
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 7,
+     "cols": [
+      "Link text",
+      "Link"
+     ],
+     "selector": "#mw-hidden-catlinks > ul",
+     "row0": [
+      "Articles with short description",
+      "https://en.wikipedia.org/wiki/Category:Articles_with_short_description"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 3.9
+  },
+  {
+   "url": "https://www.federalreserve.gov/releases/h15/",
+   "category": "government statistics",
+   "cands": [
+    {
+     "kind": "table",
+     "n": 38,
+     "cols": [
+      "Instruments",
+      "2026 Oct 30",
+      "2026 Nov 2",
+      "2026 Nov 3",
+      "2026 Nov 4",
+      "2026 Nov 5"
+     ],
+     "selector": "#h15table",
+     "row0": [
+      "Federal funds (effective) 1 2 3",
+      "3.88",
+      "3.88",
+      "3.88",
+      "3.88",
+      "3.88"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 11,
+     "cols": [
+      "Sr only focusable",
+      "Sr only focusable link"
+     ],
+     "selector": "#nav-primary-mobile > ul.nav.navmenu-nav > li.dropdown.nav-payment.dropdown--fw > ul.dropdown-menu.sub-nav-group.navmenu-nav > li > div.row > ul.col-sm-3.list-unstyled.col-nav:nth-of-type(3)",
+     "row0": [
+      "",
+      ""
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 11,
+     "cols": [
+      "Sr only focusable",
+      "Sr only focusable link"
+     ],
+     "selector": "#nav-primary > ul.nav.navbar-nav > li.dropdown.nav-payment.dropdown--fw > ul.dropdown-menu.sub-nav-group.navmenu-nav > li > div.row > ul.col-sm-3.list-unstyled.col-nav:nth-of-type(3)",
+     "row0": [
+      "",
+      ""
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 4.2
+  },
+  {
+   "url": "https://www.gov.uk/bank-holidays",
+   "category": "government open data, tabbed tables (hard)",
+   "cands": [
+    {
+     "kind": "table",
+     "n": 12,
+     "cols": [
+      "Date",
+      "Day of the week",
+      "Bank holiday"
+     ],
+     "selector": "#northern-ireland > div.app-c-calendar:nth-of-type(10) > table.gem-c-table.govuk-table",
+     "row0": [
+      "27 December",
+      "Tuesday",
+      "Christmas Day (substitute day)"
+     ]
+    },
+    {
+     "kind": "table",
+     "n": 11,
+     "cols": [
+      "Date",
+      "Day of the week",
+      "Bank holiday"
+     ],
+     "selector": "#table-id-d2c0ec0e",
+     "row0": [
+      "27 December",
+      "Tuesday",
+      "Christmas Day (substitute day)"
+     ]
+    },
+    {
+     "kind": "table",
+     "n": 11,
+     "cols": [
+      "Date",
+      "Day of the week",
+      "Bank holiday"
+     ],
+     "selector": "#northern-ireland > div.app-c-calendar:nth-of-type(9) > table.gem-c-table.govuk-table",
+     "row0": [
+      "26 December",
+      "Tuesday",
+      "Boxing Day"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 3.7
+  },
+  {
+   "url": "https://catalog.data.gov/dataset",
+   "category": "government open-data catalogue",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 20,
+     "cols": [
+      "Text",
+      "Text 2",
+      "Usa link",
+      "Usa link 2",
+      "Item",
+      "Text 4",
+      "Label",
+      "Margin top 1",
+      "Usa link link",
+      "Usa link link 2",
+      "Label link"
+     ],
+     "selector": "#search-results > section.organization-datasets.margin-top-3 > ul.usa-collection.organization-datasets__list",
+     "row0": [
+      "#1",
+      "State",
+      "Electric Vehicle Population Data",
+      "State of Washington",
+      "Dataset Last Updated: October 14, 2026",
+      "This dataset shows the Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) that are currently registered through Washington State Department of Licensing (DOL).",
+      "JSON | XML | CSV | KML | GEOJSON",
+      "Search relevance: 1.00 | Views last month: 7248 | Catalog Last Checked: October 20, 2026 at 11:22 PM",
+      "https://catalog.data.gov/dataset/electric-vehicle-population-data",
+      "https://catalog.data.gov/organization/washington",
+      "https://catalog.data.gov/dataset/electric-vehicle-population-data"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 7,
+     "cols": [
+      "Text",
+      "Usa label",
+      "Text base dark",
+      "Tag link",
+      "Text 2",
+      "Text 3",
+      "Usa sr only",
+      "Label"
+     ],
+     "selector": "#filter-form",
+     "row0": [
+      "Geographic Area",
+      "Filter by Geography Start typing to see suggestions or use the pencil button to open a larger map",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 30,
+     "cols": [
+      "Value",
+      "Text"
+     ],
+     "selector": "#filter-form",
+     "row0": [
+      "county or equivalent entity",
+      "(239243)"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 4.1
+  },
+  {
+   "url": "https://www.python.org/jobs/",
+   "category": "job board",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 20,
+     "cols": [
+      "Listing company name",
+      "Listing new",
+      "Link text",
+      "Link text 2",
+      "Listing job type",
+      "Link text 3",
+      "Listing posted",
+      "Link",
+      "Link 2",
+      "Link 3",
+      "Link 4"
+     ],
+     "selector": "#content > div.container > section.main-content.with-right-sidebar > div.row > ol.list-recent-jobs.list-row-container.menu",
+     "row0": [
+      "Eliassen Group",
+      "New",
+      "Senior Python Developer",
+      "Denver, US",
+      ", , AI AWS Lambda Cloud EC2 ElasticSearch Support Linux Machine Learning NoSQL PostgreSQL",
+      "Cloud | Database",
+      "Posted: 06 November 2026",
+      "https://www.python.org/jobs/8206/",
+      "https://www.python.org/jobs/location/denver-us/",
+      "https://www.python.org/jobs/type/cloud/ | https://www.python.org/jobs/type/database/",
+      "https://www.python.org/jobs/category/developer-engineer/"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 76,
+     "cols": [
+      "Value",
+      "Link"
+     ],
+     "selector": "#content > div.container > section.main-content.with-right-sidebar > div.row > ol.list-recent-jobs.list-row-container.menu",
+     "row0": [
+      "Cloud",
+      "https://www.python.org/jobs/type/cloud/"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 8,
+     "cols": [
+      "Link text",
+      "Link text 2",
+      "Link",
+      "Link 2"
+     ],
+     "selector": "#container",
+     "row0": [
+      "About",
+      "Applications | Quotes | Getting Started | Help",
+      "https://www.python.org/about/",
+      "https://www.python.org/about/apps/ | https://www.python.org/about/quotes/ | https://www.python.org/about/gettingstarted/ | https://www.python.org/about/help/"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 4.4
+  },
+  {
+   "url": "https://www.python.org/events/python-events/",
+   "category": "event listing",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 6,
+     "cols": [
+      "Link text",
+      "Link text 2",
+      "Title",
+      "Text",
+      "Link text 3",
+      "Link",
+      "Link 2",
+      "Link 3"
+     ],
+     "selector": "#mainnav > ul.navigation.menu",
+     "row0": [
+      "About",
+      "Applications | Quotes | Getting Started | Help",
+      "Python is a programming language that lets you work more quickly and integrate your systems more effectively.",
+      "You can learn to use Python and see almost immediate gains in productivity and lower maintenance costs. .",
+      "Learn more about Python",
+      "https://www.python.org/about/",
+      "https://www.python.org/about/apps/ | https://www.python.org/about/quotes/ | https://www.python.org/about/gettingstarted/ | https://www.python.org/about/help/",
+      "https://www.python.org/about"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 8,
+     "cols": [
+      "Link text",
+      "Link text 2",
+      "Link",
+      "Link 2"
+     ],
+     "selector": "#container",
+     "row0": [
+      "About",
+      "Applications | Quotes | Getting Started | Help",
+      "https://www.python.org/about/",
+      "https://www.python.org/about/apps/ | https://www.python.org/about/quotes/ | https://www.python.org/about/gettingstarted/ | https://www.python.org/about/help/"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 6,
+     "cols": [
+      "Link text",
+      "Date",
+      "Say no more",
+      "Event location",
+      "Link"
+     ],
+     "selector": "#content > div.container > section.main-content.with-right-sidebar > div.most-recent-events > div.shrubbery > ul.list-recent-events.menu",
+     "row0": [
+      "PyCon Hong Kong 2026",
+      "14 Nov. – 15 Nov.",
+      "2026",
+      "Tseung Kwan O, Hong Kong",
+      "https://www.python.org/events/python-events/2255/"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 3.5
+  },
+  {
+   "url": "https://www.budgetbytes.com/category/recipes/",
+   "category": "recipe list",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 16,
+     "cols": [
+      "Title",
+      "Cost per",
+      "Link",
+      "Attachment thumbnail tertiary image"
+     ],
+     "selector": "#main-content > div.content-area > main.site-main > div.block-area",
+     "row0": [
+      "Creamy Garlic Chicken",
+      "$9.21 recipe / $2.30 serving",
+      "https://www.budgetbytes.com/creamy-garlic-chicken/",
+      "https://www.budgetbytes.com/wp-content/uploads/2024/02/Creamy-Garlic-Chicken-Pan-368x276.jpg"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 12,
+     "cols": [
+      "Title",
+      "Cost per",
+      "Link",
+      "Attachment thumbnail tertiary image"
+     ],
+     "selector": "#main-content > div.content-area > main.site-main > div.archive-post-listing.facetwp-template",
+     "row0": [
+      "Black Beans and Rice",
+      "$3.74 recipe / $0.94 serving",
+      "https://www.budgetbytes.com/black-beans-and-rice/",
+      "https://www.budgetbytes.com/wp-content/uploads/2026/11/Black-Beans-and-Rice-Overhead-With-Fork-268x200.jpg"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 32,
+     "cols": [
+      "Title",
+      "Cost per"
+     ],
+     "selector": "#main-content > div.content-area > main.site-main",
+     "row0": [
+      "Creamy Garlic Chicken",
+      "$9.21 recipe / $2.30 serving"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 5.4
+  },
+  {
+   "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes",
+   "category": "documentation table",
+   "cands": [
+    {
+     "kind": "table",
+     "n": 126,
+     "cols": [
+      "Attribute Name",
+      "Attribute Name link",
+      "Elements",
+      "Elements link",
+      "Description"
+     ],
+     "selector": "#content > div.layout__body.reference-layout__body > section.content-section:nth-of-type(1) > figure.table-container > table.standard-table",
+     "row0": [
+      "accept",
+      "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/accept",
+      "<form>, <input>",
+      "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form",
+      "List of types the server accepts, typically a file type."
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 6,
+     "cols": [
+      "Heading anchor",
+      "Text",
+      "Link text",
+      "Code",
+      "External",
+      "Link",
+      "External link"
+     ],
+     "selector": "#content > div.layout__body.reference-layout__body",
+     "row0": [
+      "Attribute list",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 15,
+     "cols": [
+      "Link text",
+      "Link text 2",
+      "Link",
+      "Link 2"
+     ],
+     "selector": "#main-sidebar > nav.left-sidebar > div.left-sidebar__content > ol",
+     "row0": [
+      "HTML",
+      "",
+      "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      ""
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 4.1
+  },
+  {
+   "url": "https://docs.python.org/3/library/codecs.html",
+   "category": "documentation table",
+   "cands": [
+    {
+     "kind": "table",
+     "n": 97,
+     "cols": [
+      "Codec",
+      "Aliases",
+      "Languages"
+     ],
+     "selector": "#standard-encodings > div.responsive-table__container > table.docutils.align-default",
+     "row0": [
+      "ascii",
+      "646, us-ascii",
+      "English"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 17,
+     "cols": [
+      "Sig",
+      "Sig name",
+      "N",
+      "O",
+      "Default value",
+      "Text",
+      "Text 2",
+      "Docutils",
+      "Xref",
+      "Reference",
+      "Reference link"
+     ],
+     "selector": "#module-codecs",
+     "row0": [
+      ", ,",
+      "encode",
+      "obj | encoding | errors",
+      "=",
+      "'utf-8' | 'strict'",
+      "Encodes obj using the codec registered for encoding. | may be given to set the desired error handling scheme. The default error handler is meaning that encoding errors raise (or a more codec specific subclass, such as ). Refer to for more information on codec error handling.",
+      "Errors",
+      "'strict'",
+      "ValueError | UnicodeEncodeError",
+      "Codec Base Classes",
+      "https://docs.python.org/3/builtins/exceptions.html#ValueError | https://docs.python.org/3/builtins/exceptions.html#UnicodeEncodeError"
+     ]
+    },
+    {
+     "kind": "table",
+     "n": 6,
+     "cols": [
+      "Codec",
+      "Aliases",
+      "Meaning",
+      "Encoder / decoder",
+      "Encoder / decoder link"
+     ],
+     "selector": "#binary-transforms > div.responsive-table__container > table.docutils.align-default",
+     "row0": [
+      "base64_codec [1]",
+      "base64, base_64",
+      "Convert the operand to multiline MIME base64 (the result always includes a trailing '\\n'). Changed in version 3.4: accepts any bytes-like object as input for encoding and decoding",
+      "base64.encodebytes() / base64.decodebytes()",
+      "https://docs.python.org/3/library/base64.html#base64.encodebytes"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 3.8
+  },
+  {
+   "url": "https://quotes.toscrape.com/scroll",
+   "category": "infinite scroll (hard)",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 10,
+     "cols": [
+      "Text",
+      "Text 2",
+      "Tag"
+     ],
+     "selector": "body > div.container > div.row:nth-of-type(2) > div.col-md-8 > div.quotes",
+     "row0": [
+      "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”",
+      "by Albert Einstein",
+      "change | deep-thoughts | thinking | world"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 30,
+     "cols": [
+      "Value"
+     ],
+     "selector": "body > div.container > div.row:nth-of-type(2) > div.col-md-8 > div.quotes",
+     "row0": [
+      "change"
+     ]
+    }
+   ],
+   "top1": true,
+   "top3": true,
+   "top1_problems": [],
+   "match_rank": 1,
+   "secs": 3.8
+  },
+  {
+   "url": "https://webscraper.io/test-sites/e-commerce/scroll/computers/laptops",
+   "category": "infinite scroll e-commerce (hard)",
+   "cands": [
+    {
+     "kind": "list",
+     "n": 3,
+     "cols": [
+      "Price",
+      "Title",
+      "Card text",
+      "Review count",
+      "Title link",
+      "Img fluid image"
+     ],
+     "selector": "body.ws-v2 > div:nth-of-type(2) > main > div.container.test-site > div.row > div.col-lg-9 > div.row.ecomerce-items.ecomerce-items-scroll",
+     "row0": [
+      "$295.99",
+      "Asus VivoBook X4",
+      "Asus VivoBook X441NA-GA190 Chocolate Black, 14\", Celeron N3450, 4GB, 128GB SSD, Endless OS, ENG kbd",
+      "1 reviews",
+      "https://webscraper.io/test-sites/e-commerce/scroll/product/60",
+      "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 9,
+     "cols": [
+      "Dropdown item",
+      "Dropdown item link"
+     ],
+     "selector": "#v2-navbar-collapse > ul.navbar-nav.v2-navbar__nav > li.nav-item.dropdown:nth-of-type(5) > ul.dropdown-menu.v2-dropdown-menu.v2-dropdown-menu--solutions",
+     "row0": [
+      "E-commerce",
+      "https://webscraper.io/solutions/ecommerce-web-scraping"
+     ]
+    },
+    {
+     "kind": "list",
+     "n": 3,
+     "cols": [
+      "Value"
+     ],
+     "selector": "#termly-code-snippet-support > div > div.termly-styles-root-b0aebb.termly-styles-termly-banner-e1ed59.t-consentPrompt > div.termly-styles-main-bf5ef8 > div.termly-styles-content-fcefe4 > div.termly-styles-message-e9e76f",
+     "row0": [
+      "Cookie Policy"
+     ]
+    }
+   ],
+   "top1": false,
+   "top3": false,
+   "top1_problems": [
+    "rows 3 not in [6,12]"
+   ],
+   "match_rank": null,
+   "secs": 3.7
+  }
+ ]
+}
