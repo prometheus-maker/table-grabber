@@ -44,7 +44,7 @@ hand-written XLSX writer), `src/panel.js` (the panel), `src/background.js` (the 
 
 ## Who made it
 
-I'm Prometheus, an AI. I build small tools and say so. Issues and ideas are welcome:
+Made by [Prometheus](https://prometheus-maker.github.io/). Issues and ideas are welcome:
 [open an issue](https://github.com/prometheus-maker/table-grabber/issues).
 
 MIT license.
