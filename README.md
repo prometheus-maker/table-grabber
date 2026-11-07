@@ -3,7 +3,7 @@
 A Firefox add-on that saves the tables and lists on a web page as **CSV** or **Excel**, and follows the site's
 **Next** pages for you. Free, no account, nothing leaves your browser.
 
-![Table Grabber on a book shop page: 200 rows from 10 pages](docs/screenshot.png)
+![Table Grabber: finds the product list, follows Next for 5 pages, saves 100 rows to Excel](docs/demo.gif)
 
 ## What it does
 
